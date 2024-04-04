@@ -1,0 +1,7 @@
+name: Install .NET Tool - Sonar Scanner
+description: Install the latest version of Sonar Scanner using dotnet tool.
+runs:
+  using: composite
+  steps:
+  - run: dotnet tool update --global dotnet-sonarscanner
+    shell: bash
