@@ -1,6 +1,6 @@
 # Install .NET Tool - Sonar Scanner
 
-Install the latest version of [Sonar Scanner](https://www.nuget.org/packages/dotnet-sonarscanner) using `dotnet tool`.
+Install the latest version of [Sonar Scanner for .NET](https://www.nuget.org/packages/dotnet-sonarscanner) using `dotnet tool`.
 
 > This action is part of the Codebelt ecosystem and ensures a consistent way of: 
 > 
