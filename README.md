@@ -23,7 +23,11 @@ uses: codebeltnet/dotnet-tool-install-sonarscanner@v1
 
 ### Inputs
 
-This action has no inputs.
+```yaml
+with:
+  # The version of Sonar Scanner to install.
+  version: 7.1.1
+```
 
 ### Outputs
 

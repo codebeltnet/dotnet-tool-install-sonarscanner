@@ -1,9 +1,14 @@
 name: Install .NET Tool - Sonar Scanner
 description: Install the latest version of Sonar Scanner using dotnet tool.
+inputs:
+  version:
+    description: The version of Sonar Scanner to install.
+    required: false
+    default: 7.1.1
 runs:
   using: composite
   steps:
-  - run: dotnet tool update --global dotnet-sonarscanner
+  - run: dotnet tool update --global dotnet-sonarscanner --version ${{ inputs.version }}
     shell: bash
 branding:
   icon: 'umbrella'
