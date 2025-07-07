@@ -66,7 +66,7 @@ steps:
 
 - Cuemon for .NET - https://github.com/gimlichael/Cuemon/blob/main/.github/workflows/pipelines.yml
 
-## Contributing to .NET Test from Codebelt
+## Contributing to Install .NET Tool - Sonar Scanner from Codebelt
 
 Contributions are welcome! 
 Feel free to submit issues, feature requests, or pull requests to help improve this action.
