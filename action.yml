@@ -4,11 +4,15 @@ inputs:
   version:
     description: The version of Sonar Scanner to install.
     required: false
-    default: 10.2.0
 runs:
   using: composite
   steps:
-  - run: dotnet tool update --global dotnet-sonarscanner --version ${{ inputs.version }}
+  - run: |
+      if [ -n "${{ inputs.version }}" ]; then
+        dotnet tool update --global dotnet-sonarscanner --version "${{ inputs.version }}"
+      else
+        dotnet tool update --global dotnet-sonarscanner
+      fi
     shell: bash
 branding:
   icon: 'umbrella'
